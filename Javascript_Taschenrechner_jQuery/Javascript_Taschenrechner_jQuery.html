@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Taschenrechner</title>
+    <link rel="stylesheet" href="Javascript_Taschenrechner_jQuery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Javascript_Taschenrechner_jQuery.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div id="taschenrechner">
+            <p>Wie viel war die Rechnung?</p>
+            <p>&euro;<input id="rechnung" type="number" placeholder="Rechnungsbetrag"></p>
+            <p>Wie war der Service?</p>
+            <p><select id="service" name="service">
+                  <option disabled selected value="0">--Eine Bewertung auswählen--</option>
+                  <option value="0.3">30% - Sehr gut</option>
+                  <option value="0.2">20% - Gut</option>
+                  <option value="0.15">15% - OK</option>
+                  <option value="0.1">10% - Nicht so gut</option>
+                  <option value="0.05">5% - Schlecht</option>
+                </select>
+            </p>
+            <p>Wie viele Leute haben die Rechnung geteilt?</p>
+            <input id="leute" type="number" placeholder="Anzahl der Personen"><span>Personen</span><br>
+            <input id="rechnenFunction" type="button" value="Rechnen">
+            <div id="ergebnis">
+                <p>Jeder soll</p>
+                <p id="zahl">Tip</p>
+                <p>zahlen</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>  

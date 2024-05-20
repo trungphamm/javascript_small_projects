@@ -1,0 +1,54 @@
+h1 {
+    font-family: "Bungee Shade";
+    text-align: center;
+    font-size: 40px;
+}
+h4 {
+    margin: 0;
+    font-family: "Bungee";
+    text-align: center;
+    font-size: 36px;
+}
+body {
+    background-color: rgb(255, 155, 61);
+}
+#btn {
+    font-family: "Bungee";
+    font-size: 32px;
+    padding: .5em 1em;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 9px 2px rgba(75, 75, 75, 0.5);
+
+    transition-duration: 0.4s;
+    transition-property: background-color;
+}
+#btn:hover {
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+}
+#btn:active {
+    box-shadow: 0 9px 2px rgb(39, 39, 39);
+    transform: translate(-50%, 4px);
+}
+#katze {
+    position: relative;
+    margin-bottom: 1em;
+}
+#katze img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgb(61, 61, 61);
+}
